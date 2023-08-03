@@ -47,11 +47,22 @@
         /* Add this CSS to show and position the profile div */
         .carousel-item {
           position: relative;
+          background-position: center;
+          background-size: contain;
+        }
+        .carousel-item::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5);
         }
 
         .profile {
           position: absolute;
-          top: 480px;
+          top: 250px;
           left: 200px;
           right: 200px;
           color: white;
@@ -67,19 +78,32 @@
 <nav>
     <div class="navbar bg-base-100">
   <div class="navbar-start">
+    <img src="./images/logo2.png" alt="">
+    
+    <!-- for mobile view -->
     <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+        </svg>
+      </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Home</a></li>
-        <li><a>Services</a></li>
-        <li><a>Cases</a></li>
-        <li><a>Blog</a></li>
-        <li><a>Contact Us</a></li>   
+        <li>
+          <a>Menu</a>
+          <ul class="p-2">
+          <li><a class="font-normal text-base text-[#707070]">Home</a></li>
+          <li><a class="font-normal text-base text-[#707070]">Services <img src="./images/Frame.svg" alt=""></a></li>
+          <li><a class="font-normal text-base text-[#707070]">Cases <img src="./images/Frame.svg" alt=""></a></a></li>
+          <li><a class="font-normal text-base text-[#707070]">Blog <img src="./images/Frame.svg" alt=""></a></a></li>
+          <li><a class="font-normal text-base text-[#707070]">Contact Us <img src="./images/Frame.svg" alt=""></a></a></li>
+      </ul>
       </ul>
     </div>
-    <img src="./images/logo2.png" alt="">
-
-  </div>
-  <div class="navbar-center flex items-center justify-center">
+      </div>
+      
+      <!-- larger devies view -->
+      
+  <div class="navbar-center hidden lg:flex items-center justify-center">
     <ul class="menu menu-horizontal px-1">
         <li><a class="font-normal text-base text-[#707070]">Home</a></li>
         <li><a class="font-normal text-base text-[#707070]">Services <img src="./images/Frame.svg" alt=""></a></li>
@@ -89,7 +113,7 @@
       </ul>
     </ul>
   </div>
-  <div class="navbar-end">
+  <div class="navbar-end hidden lg:flex">
     <a class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-7 py-5">Free Consultation</a>
   </div>
 </div>
@@ -102,10 +126,10 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="text-center text-neutral-content">
       <div class="">
-        <h2 class="headings text-7xl mb-6">We Provide Effective <br> Legal Solutions</h2>
-        <p class="text-base mb-8">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+        <h2 class="headings text-4xl lg:text-7xl mb-6">We Provide Effective <br> Legal Solutions</h2>
+        <p class="text-xs lg:text-base mb-8">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
         <div class="mb-6 flex justify-center items-center">
-          <input type="text" placeholder="Search your services" class="text-[#A0A0A0] rounded-lg py-4 pl-4 pr-80 mr-6 box-border" />
+          <input type="text" placeholder="Search your services" class="text-[#A0A0A0] rounded-lg py-4 pl-4 pr-4 lg:pr-80 mr-6 box-border" />
           <a class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-6 py-4">Search</a>
         </div>
       </div>
@@ -211,29 +235,22 @@
   <p class="text-Dark3 text-center text-base p-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 <!-- slider -->
 
-<div class="carousel w-full">
-  <div id="item1" class="carousel-item w-full">
-    <img src="./images/slider-2.jpg" class="" />
-        <!-- Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full bg-[#111111CC]"></div>
-    <div class="profile text-center ">
+<div class="carousel container mx-auto " >
+  <div id="item1" class="carousel-item w-full bg-[#111111CC]" style="background-image:url(./images/slider-2.jpg)">
+    <div class="profile text-center flex flex-col justify-center items-center absolute top-1 lg:top-60 left-2 lg:left-48 right-2 lg:right-40">
       <div class="flex justify-center p-4">
       <img src="./images/Ellipse 1.png" alt=""></div>
-      <h3 class="headings text-3xl mb-6">Awlad Hossain</h3>
-      <h4 class="text-base">UIX Designer</h4>
+      <h3 class="headings text-3xl mb-6 text-white">Awlad Hossain</h3>
+      <h4 class="text-base text-white">UIX Designer</h4>
       <p class="text-Dark7 text-center text-base p-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
     </div>
-    <div class="flex justify-center w-full py-2 gap-2 ">
-      <a href="#item1" class="btn btn-xs">1</a> 
-      <a href="#item2" class="btn btn-xs">2</a> 
-      <a href="#item3" class="btn btn-xs">3</a> 
-    </div>
+
   </div> 
   <div id="item2" class="carousel-item w-full">
     <img src="./images/slider-1.jpg" class="" />
             <!-- Overlay -->
             <div class="absolute top-0 left-0 w-full h-full bg-[#111111CC]"></div>
-            <div class="profile text-center ">
+            <div class="profile text-center flex flex-col justify-center items-center absolute top-1 lg:top-60 left-2 lg:left-48 right-2 lg:right-40">
               <div class="flex justify-center p-4">
               <img src="./images/Ellipse 1.png" alt=""></div>
               <h3 class="headings text-3xl mb-6">Awlad Hossain</h3>
@@ -245,7 +262,7 @@
     <img src="./images/slider-3.jpg" class="" />
             <!-- Overlay -->
             <div class="absolute top-0 left-0 w-full h-full bg-[#111111CC]"></div>
-            <div class="profile text-center ">
+            <div class="profile text-center flex flex-col justify-center items-center absolute top-1 lg:top-60 left-2 lg:left-48 right-2 lg:right-40">
               <div class="flex justify-center p-4">
               <img src="./images/Ellipse 1.png" alt=""></div>
               <h3 class="headings text-3xl mb-6">Awlad Hossain</h3>
@@ -368,11 +385,11 @@
 <div>
 <div class="flex justify-center">
   <form > 
-    <input type="text" id="fname" name="firstname" placeholder="Your Name" class="bg-Dark7 p-5 m-4 w-full"><br>
-    <input type="email" id="email" name="email" placeholder="Your Email" class="bg-Dark7 p-5 m-4 w-full"><br>
-    <input type="text" id="Subject" name="Subject" placeholder="Subject" class="bg-Dark7 p-5 m-4 w-full">
+    <input type="text" id="fname" name="firstname" placeholder="Your Name" class="bg-Dark7 p-5 m-4 w-full rounded-lg"><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" class="bg-Dark7 p-5 m-4 w-full rounded-lg"><br>
+    <input type="text" id="Subject" name="Subject" placeholder="Subject" class="bg-Dark7 p-5 m-4 w-full rounded-lg">
     <br>
-    <textarea id="msg" name="Message" placeholder="Your Message.." style="height:200px" class="bg-Dark7 p-5 m-4 pr-12 w-full"></textarea>  
+    <textarea id="msg" name="Message" placeholder="Your Message.." style="height:200px" class="bg-Dark7 p-5 m-4 pr-12 w-full rounded-lg"></textarea>  
     <br>
     <button class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-6 py-4 m-4 w-full">Submit</button>
   </form>
@@ -412,9 +429,9 @@
         <p class="text-Dark5 text-center m-2">Subscribe for our latest & Articles. <br>We Won’t Give You  Spam Mails</p>
         <div class="form-control w-80 m-2">
           <div class="relative">
-            <input type="text" placeholder="Email Address" class="input input-bordered w-full pr-16" /> 
+            <input type="text" placeholder="Email Address" class="input input-bordered w-44 lg:w-full pr-16" /> 
          
-            <img src="./images/Frame2.png" alt="" class="btn border-none bg-[#B68C5A] absolute top-0 right-0 rounded-l-none">
+            <img src="./images/Frame2.png" alt="" class="btn border-none bg-[#B68C5A] absolute top-0 right-1/4 lg:right-0 rounded-l-none">
           </div>
         </div>
       </div>
