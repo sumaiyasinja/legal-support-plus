@@ -293,6 +293,14 @@
       <p class="text-Dark3">There are many variations of passages of Lorem Ipsum <br> available, but the majority have suffered alteration in some <br> form, by injected humour, . </p>
     </div>
   </div>
+  <div class="collapse collapse-plus bg-base-200 my-10">
+    <input type="radio" name="my-accordion-3" /> 
+    <div class="collapse-title headings text-2xl">
+      Are application fee waivers available?    </div>
+    <div class="collapse-content"> 
+      <p class="text-Dark3">There are many variations of passages of Lorem Ipsum <br> available, but the majority have suffered alteration in some <br> form, by injected humour, . </p>
+    </div>
+  </div>
 </div>
   <!-- acrodions end -->
 
@@ -311,7 +319,7 @@
 <!-- card container -->
   <div class="grid grid-cols-1 lg:grid-cols-2">
       <!-- CARD 1 -->
-      <div class="bg-Dark7 border rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+      <div class="bg-Dark7 border rounded-none">
         <figure class="flex items-center justify-center px-10 pt-10 mb-4">
           <img src="./images/address.png" alt="address" class="rounded-xl" />
         </figure>
@@ -322,7 +330,7 @@
         </div>
       </div>
       <!-- CARD 2 -->
-      <div class="bg-Dark7 border  border-neutral-300 rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+      <div class="bg-Dark7 border rounded-none">
         <figure class="flex items-center justify-center px-10 pt-10 mb-4">
           <img src="./images/call.png" alt="address" class="rounded-xl" />
         </figure>
@@ -333,7 +341,7 @@
         </div>
       </div>
       <!-- CARD 3 -->
-      <div class="bg-Dark7 border  border-neutral-300 rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+      <div class="bg-Dark7 border rounded-none">
         <figure class="flex items-center justify-center px-10 pt-10 mb-4">
           <img src="./images/email.png" alt="address" class="rounded-xl" />
         </figure>
@@ -344,7 +352,7 @@
         </div>
       </div>
       <!-- CARD 4 -->
-      <div class="bg-Dark7 border border-neutral-300rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+      <div class="bg-Dark7 border rounded-none">
         <figure class="flex items-center justify-center px-10 pt-10 mb-4">
           <img src="./images/time.png" alt="address" class="rounded-xl" />
         </figure>
@@ -360,13 +368,13 @@
 <div>
 <div class="flex justify-center">
   <form > 
-    <input type="text" id="fname" name="firstname" placeholder="Your Name" class="bg-Dark7 p-5 m-4"><br>
-    <input type="email" id="email" name="email" placeholder="Your Email" class="bg-Dark7 p-5 m-4"><br>
-    <input type="text" id="Subject" name="Subject" placeholder="Subject" class="bg-Dark7 p-5 m-4">
+    <input type="text" id="fname" name="firstname" placeholder="Your Name" class="bg-Dark7 p-5 m-4 w-full"><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" class="bg-Dark7 p-5 m-4 w-full"><br>
+    <input type="text" id="Subject" name="Subject" placeholder="Subject" class="bg-Dark7 p-5 m-4 w-full">
     <br>
-    <textarea id="msg" name="Message" placeholder="Your Message.." style="height:200px" class="bg-Dark7 p-5 m-4 pr-12"></textarea>  
+    <textarea id="msg" name="Message" placeholder="Your Message.." style="height:200px" class="bg-Dark7 p-5 m-4 pr-12 w-full"></textarea>  
     <br>
-    <button class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-6 py-4 m-4">Submit</button>
+    <button class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-6 py-4 m-4 w-full">Submit</button>
   </form>
 </div>
 </div>
@@ -377,35 +385,36 @@
     <!-- main section ended -->
     <!-- footer start -->
     <footer class="container mx-auto mt-10 footer p-20 bg-Dark1 text-base-conten flex flex-col justify-center lg:flex-row ">
-      <div>
-        <img src="./images/logo.png" alt="">
-        <p class="text-Dark5">There are many variations of passages of <br> Lorem Ipsum available, <br>but the majority have suffered alteration <br> in some form, by injected humour.</p>
+      <div class=" m-4 ">
+        <img class="m-2 mb-6" src="./images/logo.png" alt="">
+        <p class="text-Dark5 m-2">There are many variations of passages of <br> Lorem Ipsum available, <br>but the majority have suffered alteration <br> in some form, by injected humour.</p>
       </div> 
-      <div>
-        <span class="headings text-xl text-white">Usefull Link</span> 
-        <a class="link link-hover text-Dark5">Home</a> 
-        <a class="link link-hover text-Dark5">About us</a> 
-        <a class="link link-hover text-Dark5">Cases</a> 
-        <a class="link link-hover text-Dark5">Blog</a> 
-        <a class="link link-hover text-Dark5">Contact us</a>
+      <div class="m-4">
+        <span class="headings text-white mb-6 text-2xl">Usefull Link</span> 
+        <a class="link link-hover text-Dark5 m-2">Home</a> 
+        <a class="link link-hover text-Dark5 m-2">About us</a> 
+        <a class="link link-hover text-Dark5 m-2">Cases</a> 
+        <a class="link link-hover text-Dark5 m-2">Blog</a> 
+        <a class="link link-hover text-Dark5 m-2">Contact us</a>
       </div> 
-      <div>
-        <span class="headings text-xl text-white">Contact Now</span> 
-        <a class="link link-hover text-Dark5">555 4th 5t NW, Washington <br>
+      <div class="m-4">
+        <span class="headings text-white m-2 mb-6  text-2xl">Contact Now</span> 
+        <a class="link link-hover text-Dark5 m-2">555 4th 5t NW, Washington <br>
           DC 20530, United States</a> 
-        <a class="link link-hover text-Dark5">+88 01750 000 000 <br>
+        <a class="link link-hover text-Dark5 m-2">+88 01750 000 000 <br>
           +88 01750 000 000</a> 
-        <a class="link link-hover text-Dark5">info@gmail.com <br>
+        <a class="link link-hover text-Dark5 m-2">info@gmail.com <br>
           info@gmail.com</a>
       </div> 
       <!-- subscribe box -->
-      <div>
-        <span class="headings text-xl text-white">Subscribe</span> 
-        <p class="text-Dark5 text-center">Subscribe for our latest & Articles. <br>We Won’t Give You  Spam Mails</p>
-        <div class="form-control w-80">
+      <div class="m-4">
+        <span class="headings text-white m-3 mb-6 text-2xl">Subscribe</span> 
+        <p class="text-Dark5 text-center m-2">Subscribe for our latest & Articles. <br>We Won’t Give You  Spam Mails</p>
+        <div class="form-control w-80 m-2">
           <div class="relative">
             <input type="text" placeholder="Email Address" class="input input-bordered w-full pr-16" /> 
-            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+         
+            <img src="./images/Frame2.png" alt="" class="btn border-none bg-[#B68C5A] absolute top-0 right-0 rounded-l-none">
           </div>
         </div>
       </div>
