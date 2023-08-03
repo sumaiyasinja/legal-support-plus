@@ -75,28 +75,30 @@
 <nav>
     <div class="navbar bg-base-100">
   <div class="navbar-start">
+      <!-- for mobile view -->
+      <div class="dropdown mr-20">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li>
+            <a>Menu</a>
+            <ul class="p-2">
+            <li><a class="font-normal text-base text-[#707070]">Home</a></li>
+            <li><a class="font-normal text-base text-[#707070]">Services <img src="./images/Frame.svg" alt=""></a></li>
+            <li><a class="font-normal text-base text-[#707070]">Cases <img src="./images/Frame.svg" alt=""></a></a></li>
+            <li><a class="font-normal text-base text-[#707070]">Blog <img src="./images/Frame.svg" alt=""></a></a></li>
+            <li><a class="font-normal text-base text-[#707070]">Contact Us <img src="./images/Frame.svg" alt=""></a></a></li>
+        </ul>
+        </ul>
+     </div> 
     <img src="./images/logo2.png" alt="">
     
-    <!-- for mobile view -->
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path>
-        </svg>
-      </label>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li>
-          <a>Menu</a>
-          <ul class="p-2">
-          <li><a class="font-normal text-base text-[#707070]">Home</a></li>
-          <li><a class="font-normal text-base text-[#707070]">Services <img src="./images/Frame.svg" alt=""></a></li>
-          <li><a class="font-normal text-base text-[#707070]">Cases <img src="./images/Frame.svg" alt=""></a></a></li>
-          <li><a class="font-normal text-base text-[#707070]">Blog <img src="./images/Frame.svg" alt=""></a></a></li>
-          <li><a class="font-normal text-base text-[#707070]">Contact Us <img src="./images/Frame.svg" alt=""></a></a></li>
-      </ul>
-      </ul>
-    </div>
-      </div>
+  </div>
+  
+      
       
       <!-- larger devies view -->
       
@@ -110,7 +112,7 @@
       </ul>
     </ul>
   </div>
-  <div class="navbar-end hidden lg:flex">
+  <div class="navbar-end hidden lg:flex ">
     <a class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-7 py-5">Free Consultation</a>
   </div>
 </div>
@@ -281,8 +283,8 @@
   <h1 class="headings text-Dark2 text-4xl text-center p-2">Frequently Asked Any Questions</h1>
   <p class="text-Dark3 text-center text-base p-4">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
   <div class="flex flex-col-reverse lg:flex-row justify-center">
-  <!-- acrodion start -->
-  <div>
+  <!-- accrodions start -->
+  <div class="container mx-auto">
   <div class="collapse collapse-plus bg-base-200 my-10">
     <input type="radio" name="my-accordion-3" checked="checked" /> 
     <div class="collapse-title headings text-2xl">
@@ -316,7 +318,7 @@
     </div>
   </div>
 </div>
-  <!-- acrodions end -->
+  <!-- accrodions end -->
 
   <div class="flex justify-center">
     <img src="./images/faq.png" alt="">
