@@ -23,8 +23,11 @@
             colors: {
               clifford: '#da373d',
               'primary-color': '#B68C5A',
+              'Dark1' : '#111111',
               'Dark2' : '#414040',
               'Dark3' : '#707070',
+              'Dark4' : '#A0A0A0',
+              'Dark5' : '#CFCFCF',
               'Dark7' : '#F3F3F3',
             }
             
@@ -300,20 +303,112 @@
 <!-- Contact With Us section -->
 <section class="container mx-auto my-10">
   <h1 class="headings text-Dark2 text-4xl text-center p-2">Contact With Us</h1>
-  <p class="text-Dark3 text-center text-base p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-  <div class="flex justify-center">
+  <p class="text-Dark3 text-center text-base p-4 mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+ 
+  <div class="flex justify-center gap-20">
 
 <!-- card container -->
-  <div>
+  <div class="grid grid-cols-2 gap-4">
+      <!-- CARD 1 -->
+      <div class="card bg-Dark7 border border-transparent rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+        <figure class="px-10 pt-10 mb-4">
+          <img src="./images/address.png" alt="address" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title mb-4 text-2xl text-Dark2">Address</h2>
+          <p class="text-base	 mb-6 text-Dark3">A108 Adam Street,<br>
+            New York, NY 535022</p>
+        </div>
+      </div>
+      <!-- CARD 2 -->
+      <div class="card bg-Dark7 border border-transparent rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+        <figure class="px-10 pt-10 mb-4">
+          <img src="./images/call.png" alt="address" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title mb-4 text-2xl  text-Dark2">Call Us</h2>
+          <p class="text-base	 mb-6 text-Dark3">+88 01750 00 00 00 <br>
+            +88 01750 00 00 00</p>
+        </div>
+      </div>
+      <!-- CARD 3 -->
+      <div class="card bg-Dark7 border border-transparent rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+        <figure class="px-10 pt-10 mb-4">
+          <img src="./images/email.png" alt="address" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title mb-4 text-2xl text-Dark2">Email Us</h2>
+          <p class="text-base mb-6 text-Dark3">info@gmail.com <br>
+            info@gmail.com</p>
+        </div>
+      </div>
+      <!-- CARD 4 -->
+      <div class="card bg-Dark7 border border-transparent rounded-none hover:border-[#E7E7E7] bg-gradient-to-b hover:from-[#F3F3F3] hover:to-transparent">
+        <figure class="px-10 pt-10 mb-4">
+          <img src="./images/time.png" alt="address" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title mb-4 text-2xl text-Dark2">Working Hours</h2>
+          <p class="text-base	mb-6 text-Dark3">Mon-Fri: 9AM to 5PM <br>
+            Sunday: 9AM to 1 PM</p>
+        </div>
+      </div>
  
   </div>
 <!-- form container -->
-  <div>
- 
-  </div>
+<div>
+<div class="flex-1">
+  <form> 
+    <input type="text" id="fname" name="firstname" placeholder="Your Name" class="bg-Dark7 p-5 m-4"><br>
+    <input type="email" id="email" name="email" placeholder="Your Email" class="bg-Dark7 p-5 m-4"><br>
+    <input type="text" id="Subject" name="Subject" placeholder="Subject" class="bg-Dark7 p-5 m-4">
+    <br>
+    <textarea id="msg" name="Message" placeholder="Your Message.." style="height:200px" class="bg-Dark7 p-5 m-4 pr-12"></textarea>  
+    <br>
+    <button class="font-semibold	text-white text-lg bg-primary-color rounded-lg px-6 py-4 m-4">Submit</button>
+  </form>
+</div>
+</div>
+
 </div>
 </section>
 </main>
-    
+    <!-- main section ended -->
+    <!-- footer start -->
+    <footer class="container mx-auto mt-10 footer p-20 bg-Dark1 text-base-content">
+      <div>
+        <img src="./images/logo.png" alt="">
+        <p class="text-Dark5">There are many variations of passages of <br> Lorem Ipsum available, <br>but the majority have suffered alteration <br> in some form, by injected humour.</p>
+      </div> 
+      <div>
+        <span class="headings text-xl text-white">Usefull Link</span> 
+        <a class="link link-hover text-Dark5">Home</a> 
+        <a class="link link-hover text-Dark5">About us</a> 
+        <a class="link link-hover text-Dark5">Cases</a> 
+        <a class="link link-hover text-Dark5">Blog</a> 
+        <a class="link link-hover text-Dark5">Contact us</a>
+      </div> 
+      <div>
+        <span class="headings text-xl text-white">Contact Now</span> 
+        <a class="link link-hover text-Dark5">555 4th 5t NW, Washington <br>
+          DC 20530, United States</a> 
+        <a class="link link-hover text-Dark5">+88 01750 000 000 <br>
+          +88 01750 000 000</a> 
+        <a class="link link-hover text-Dark5">info@gmail.com <br>
+          info@gmail.com</a>
+      </div> 
+      <!-- subscribe box -->
+      <div>
+        <span class="headings text-xl text-white">Subscribe</span> 
+        <p class="text-Dark5 text-center">Subscribe for our latest & Articles. <br>We Won’t Give You  Spam Mails</p>
+        <div class="form-control w-80">
+          <div class="relative">
+            <input type="text" placeholder="Email Address" class="input input-bordered w-full pr-16" /> 
+            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ended -->
 </body>
 </html>
